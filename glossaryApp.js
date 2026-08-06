@@ -30,13 +30,10 @@ set(501,'毛髪に生じる状態として正しいものはどれか。','毛�
 set(532,'表示の内容として正しいものはどれか。','配合した成分名を容器や外箱などに表示する。',['製造工程の作業時間を容器や外箱などに表示する。','使用者の健康状態を容器や外箱などに表示する。','販売店の在庫数量を容器や外箱などに表示する。']);
 set(543,'香粧品に配合する主な目的はどれか。','保湿、溶剤、湿潤性の調整に用いる。',['油分を補い、皮膚表面を閉塞して保護する。','酸化反応を起こし、毛髪中の色素を分解する。','界面張力を下げ、洗浄や乳化を助ける。']);
 set(544,'香粧品に配合する主な目的はどれか。','保湿、溶剤、使用感の調整に用いる。',['油分を補い、皮膚表面を閉塞して保護する。','酸化反応を起こし、毛髪中の色素を分解する。','界面張力を下げ、洗浄や乳化を助ける。']);
-const surf={556:['陰イオンとなり、洗浄・起泡に用いられる。','陽イオンとなり、柔軟・帯電防止に用いられる。','イオン化せず、乳化・可溶化に用いられる。','液性により電荷が変わり、低刺激洗浄に用いられる。'],557:['陽イオンとなり、柔軟・帯電防止に用いられる。','陰イオンとなり、洗浄・起泡に用いられる。','イオン化せず、乳化・可溶化に用いられる。','液性により電荷が変わり、低刺激洗浄に用いられる。'],558:['イオン化せず、乳化・可溶化に用いられる。','陰イオンとなり、洗浄・起泡に用いられる。','陽イオンとなり、柔軟・帯電防止に用いられる。','液性により電荷が変わり、低刺激洗浄に用いられる。'],559:['液性により電荷が変わり、低刺激洗浄に用いられる。','陰イオンとなり、洗浄・起泡に用いられる。','陽イオンとなり、柔軟・帯電防止に用いられる。','イオン化せず、乳化・可溶化に用いられる。']};
-Object.entries(surf).forEach(([id,a])=>set(id,'水中での性質と主な用途の組合せはどれか。',a[0],a.slice(1)));
 set(577,'パーマ第1剤での主な働きはどれか。','シスチン結合を切断し、毛髪を変形しやすくする。',['切断した結合を再形成し、毛髪の形を固定する。','毛髪表面を被膜で覆い、摩擦や乾燥を抑える。','染料中間体を発色させ、毛髪内部を染色する。']);
 set(578,'パーマ第2剤での主な働きはどれか。','切断した結合を再形成し、毛髪の形を固定する。',['シスチン結合を切断し、毛髪を変形しやすくする。','毛髪表面を被膜で覆い、摩擦や乾燥を抑える。','界面張力を下げ、薬剤を均一に分散させる。']);
 set(627,'この技術の説明として正しいものはどれか。','染毛剤などを用いて、毛髪の色を変化させる技術。',['酸化剤で毛髪中の色素を分解し、明るくする技術。','還元と酸化を利用し、毛髪に持続性のウェーブをつける技術。','熱とブラシ操作を利用し、毛髪を一時的に整える技術。']);
 set(628,'この技術の説明として正しいものはどれか。','酸化剤で毛髪中の色素を分解し、明るくする技術。',['染毛剤などを用いて、毛髪へ色素を補う技術。','還元と酸化を利用し、毛髪に持続性のウェーブをつける技術。','熱とブラシ操作を利用し、毛髪を一時的に整える技術。']);
-set(680,'適した滅菌対象と条件の組合せはどれか。','熱や湿気に弱い器材を、低温のガスで処理する。',['耐熱性の器材を、高温高圧の飽和蒸気で処理する。','ガラス器材などを、乾燥した高温空気で処理する。','耐熱性の器材を、煮沸水中で一定時間処理する。']);
 set(693,'毛髪を染める性質として正しいものはどれか。','陽性の電荷をもち、毛髪表面付近へ吸着して染める。',['酸性の水溶液中で、毛髪の表層部へ吸着して染める。','酸化反応で発色し、毛髪内部へ浸透して染める。','毛髪中の色素を酸化分解し、色を明るくする。']);
 set(694,'毛髪を染める性質として正しいものはどれか。','低分子の染料が、毛髪の表層部へ浸透して染める。',['陽性の電荷をもつ染料が、毛髪表面へ吸着して染める。','酸化反応で発色する染料が、毛髪内部へ浸透して染める。','毛髪中の色素を酸化分解し、色を明るくする。']);
 const balanceIds=[117,143,192,205,210,218,232,236,242,243,293,300,313,314,323,345,346,348,368,391,429,479,576,600,635,637,643,656];
@@ -323,7 +320,7 @@ for(const item of Object.values(q)){
 data.version='3.0.108';
 quizData.version='3.0.108';
 }
-const APP_VERSION='3.0.194',STORAGE_KEY='riyoshi_glossary_learning_v1',TODAY_BOOKMARK_KEY='riyoshi_glossary_today_bookmarks_v1',TEXT_SCALE_KEY='riyoshi_glossary_text_enlarged_v1',TODAY_META_KEY='__today10',ROUND_META_KEY='__roundProgress',CATEGORY_ROUND_KEY='__categoryRounds',REVIEW_DATE='2026-07-17';
+const APP_VERSION='3.0.195',STORAGE_KEY='riyoshi_glossary_learning_v1',TODAY_BOOKMARK_KEY='riyoshi_glossary_today_bookmarks_v1',TEXT_SCALE_KEY='riyoshi_glossary_text_enlarged_v1',TODAY_META_KEY='__today10',ROUND_META_KEY='__roundProgress',CATEGORY_ROUND_KEY='__categoryRounds',REVIEW_DATE='2026-07-17';
 {const s=document.createElement('style');s.textContent='.mixup-comparison{text-align:left}.mixup-comparison-term{margin:0 0 16px!important}.mixup-term-name{margin:0 0 5px;font-weight:400}.mixup-comparison ul{margin:0;padding:0;list-style:none}.mixup-comparison li{display:flex;align-items:flex-start;text-align:left}.mixup-comparison li>span:first-child{flex:0 0 1em}.mixup-comparison li>span:last-child{flex:1;min-width:0}.mixup-memory{margin:20px 0 0!important}.mixup-memory>div{margin-bottom:5px}.mixup-memory p{display:flex;align-items:flex-start;margin:0;text-align:left;font-size:var(--font-lv4)}.mixup-memory p>span:first-child{flex:0 0 1em}.mixup-memory p>span:last-child{flex:1;min-width:0;font-size:var(--font-lv4)}.mixup-memory>div{font-size:var(--font-lv4)}.mixup-field>.term-value{padding-left:0}#dictionaryContent section > div[data-multiline]{text-align:left}#dictionaryContent section > ul[data-multiline]{text-align:left}.dictionary-sheet .exam-list{margin:0;padding-left:0;list-style:none}.dictionary-sheet .exam-list .exam-bullet{display:flex;align-items:flex-start;text-align:left}.dictionary-sheet .exam-list .exam-bullet>span[aria-hidden="true"]{flex:0 0 1em}.exam-bullet>.exam-line-text,.exam-bullet-line>.exam-line-text{flex:1 1 auto;min-width:0}.dictionary-sheet .exam-list .exam-plain{text-align:left}#dictionaryContent section>div{text-align:left}';document.head.append(s)}
 const flashcardTerms=data.terms;
 if(!(data.comparisonTerms||[]).some(term=>term.name==='非病原微生物')){
