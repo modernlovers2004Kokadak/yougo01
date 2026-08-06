@@ -26,16 +26,9 @@ set(283,'器具の処理方法を選ぶ基準はどれか。','接触する部�
 set(297,'健康について示された基本的な考え方はどれか。','身体的・精神的・社会的に良好な状態を健康と捉える。',['疾病や病弱が認められない状態だけを健康と捉える。','身体機能が正常に保たれた状態だけを健康と捉える。','医療サービスを受けられる状態だけを健康と捉える。']);
 set(334,'値が100を超える場合の解釈として正しいものはどれか。','基準集団より死亡が多いことを示す。',['基準集団より死亡が少ないことを示す。','基準集団と死亡の程度が同じことを示す。','対象集団の平均寿命が100歳を超えることを示す。']);
 set(461,'原因となる微生物はどれか。','カンジダ属の真菌。',['白癬菌などの真菌。','黄色ブドウ球菌などの細菌。','単純ヘルペスウイルスなどのウイルス。']);
-set(501,'毛髪に生じる状態として正しいものはどれか。','毛髪の先端や毛幹が縦に裂けた状態。',['毛髪の途中に結び目ができた状態。','毛髪が横方向に折れて切れた状態。','毛髪表面に皮脂が多く付着した状態。']);
 set(532,'表示の内容として正しいものはどれか。','配合した成分名を容器や外箱などに表示する。',['製造工程の作業時間を容器や外箱などに表示する。','使用者の健康状態を容器や外箱などに表示する。','販売店の在庫数量を容器や外箱などに表示する。']);
-set(543,'香粧品に配合する主な目的はどれか。','保湿、溶剤、湿潤性の調整に用いる。',['油分を補い、皮膚表面を閉塞して保護する。','酸化反応を起こし、毛髪中の色素を分解する。','界面張力を下げ、洗浄や乳化を助ける。']);
-set(544,'香粧品に配合する主な目的はどれか。','保湿、溶剤、使用感の調整に用いる。',['油分を補い、皮膚表面を閉塞して保護する。','酸化反応を起こし、毛髪中の色素を分解する。','界面張力を下げ、洗浄や乳化を助ける。']);
-set(577,'パーマ第1剤での主な働きはどれか。','シスチン結合を切断し、毛髪を変形しやすくする。',['切断した結合を再形成し、毛髪の形を固定する。','毛髪表面を被膜で覆い、摩擦や乾燥を抑える。','染料中間体を発色させ、毛髪内部を染色する。']);
-set(578,'パーマ第2剤での主な働きはどれか。','切断した結合を再形成し、毛髪の形を固定する。',['シスチン結合を切断し、毛髪を変形しやすくする。','毛髪表面を被膜で覆い、摩擦や乾燥を抑える。','界面張力を下げ、薬剤を均一に分散させる。']);
 set(627,'この技術の説明として正しいものはどれか。','染毛剤などを用いて、毛髪の色を変化させる技術。',['酸化剤で毛髪中の色素を分解し、明るくする技術。','還元と酸化を利用し、毛髪に持続性のウェーブをつける技術。','熱とブラシ操作を利用し、毛髪を一時的に整える技術。']);
 set(628,'この技術の説明として正しいものはどれか。','酸化剤で毛髪中の色素を分解し、明るくする技術。',['染毛剤などを用いて、毛髪へ色素を補う技術。','還元と酸化を利用し、毛髪に持続性のウェーブをつける技術。','熱とブラシ操作を利用し、毛髪を一時的に整える技術。']);
-set(693,'毛髪を染める性質として正しいものはどれか。','陽性の電荷をもち、毛髪表面付近へ吸着して染める。',['酸性の水溶液中で、毛髪の表層部へ吸着して染める。','酸化反応で発色し、毛髪内部へ浸透して染める。','毛髪中の色素を酸化分解し、色を明るくする。']);
-set(694,'毛髪を染める性質として正しいものはどれか。','低分子の染料が、毛髪の表層部へ浸透して染める。',['陽性の電荷をもつ染料が、毛髪表面へ吸着して染める。','酸化反応で発色する染料が、毛髪内部へ浸透して染める。','毛髪中の色素を酸化分解し、色を明るくする。']);
 const balanceIds=[117,143,192,205,210,218,232,236,242,243,293,300,313,314,323,345,346,348,368,391,429,479,576,600,635,637,643,656];
 const chars=text=>new Set(String(text).replace(/[\s、。・（）()]/g,''));
 const similarity=(a,b)=>{const aa=chars(a),bb=chars(b);let n=0;for(const c of aa)if(bb.has(c))n++;return n/Math.max(1,new Set([...aa,...bb]).size)};
@@ -59,7 +52,6 @@ for(const id of lengthRiskIds){
  const distractors=chooseThree(pool,item.correct);if(distractors.length===3)item.distractors=distractors;
 }
 set(395,'消費者基本法で消費者の権利として位置づけられる組合せはどれか。','安全の確保・選択の機会・必要な情報・教育・意見反映・被害救済。',['契約の自由・納税・勤労・財産形成・営業許可・価格決定。','衛生管理・資格取得・行政届出・広告審査・料金設定・店舗登録。','診療給付・介護給付・年金給付・雇用保障・住宅扶助・生活扶助。']);
-set(531,'化粧品基準が定める事項はどれか。','配合禁止成分と配合制限成分などを定める。',['全成分表示の記載順序と文字サイズだけを定める。','製造販売業許可の申請手続と審査期間を定める。','広告に表示できる効能効果と料金表示を定める。']);
 set(123,'主な予防対象となる感染症はどれか。','結核',['麻しん','風しん','破傷風']);
 const genericDefinitionPattern=/(?:について正しい説明はどれか|の説明として正しいものはどれか)/;
 const sameCategoryNames=(term)=>data.terms
@@ -80,7 +72,6 @@ for(const term of data.terms){
  Object.assign(item,{question:`${description}。この説明に該当する用語はどれか。`,correct:term.name,distractors,reverseLookup:true});
 }
 set(123,'BCGワクチンの主な予防対象はどれか。','結核',['麻しん','風しん','破傷風']);
-set(580,'パーマ第1剤の作用として正しいものはどれか。','毛髪内のシスチン結合を還元して切断する。',['切断したシスチン結合を酸化して再結合させる。','毛髪表面を被膜で覆って水分蒸発を抑える。','酸化染料を発色させて毛髪内部を染色する。']);
 set(665,'感染症の発生状況、原因、感染経路、接触者などを調べるものはどれか。','積極的疫学調査',['健康監視','病原体等管理']);
 set(666,'病原体の漏えいを防ぐため、安全な保管・取扱い・廃棄を行うものはどれか。','病原体等管理',['積極的疫学調査','健康監視']);
 set(667,'感染の可能性がある人について、一定期間、体温などの健康状態を確認するものはどれか。','健康監視',['積極的疫学調査','病原体等管理']);
@@ -197,22 +188,20 @@ for(const id of [128,130,131,133,135,168,169,170,171,206]){
  item.question=preventionPromptOverrides[id]||`${preventionCleanDefinition(term)}。この説明に該当する用語はどれか。`;
 }
 for(const id of [665,666,667,668,669,670,671,672,674,675])q[id].reverseLookup=true;
-for(const term of data.terms)if(term.category==='消毒法'&&q[term.id])q[term.id].reverseLookup=true;
+const disinfectionProcedureIds=new Set([210,212,217,218,235,236,242]);
+for(const term of data.terms)if(term.category==='消毒法'&&q[term.id]&&!disinfectionProcedureIds.has(Number(term.id)))q[term.id].reverseLookup=true;
 for(const [id,item] of publicHealthQuestions){q[id]=item;q[id].reverseLookup=true}
 // Version 3.0.85: 最終内容監査で、論点・単位が不揃いだった消毒法の誤答を修正。
 set(211,'別名を2-プロパノールといい、消毒に用いられるアルコールはどれか。','イソプロパノール',['エタノール','メタノール']);
 set(213,'塩素系消毒薬の水溶液中で、殺菌作用の中心となる成分はどれか。','次亜塩素酸',['次亜塩素酸イオン','塩化物イオン']);
 set(215,'ヨウ素をアルコールに溶かした消毒薬はどれか。','ヨードチンキ',['ポビドンヨード','次亜塩素酸ナトリウム']);
-set(217,'血液が付着していない器具をグルコン酸クロルヘキシジンで消毒する条件はどれか。','0.05％液に10分間以上浸す',['0.01％液に10分間以上浸す','0.5％液に5分間以上浸す']);
 set(219,'第四級アンモニウム塩系で、逆性石けんに分類される消毒薬はどれか。','塩化ベンゼトニウム',['塩化ベンザルコニウム','グルコン酸クロルヘキシジン']);
 set(226,'器具の消毒前に、汚れや有機物を落とすために用いる洗浄剤はどれか。','中性洗剤',['酵素洗浄剤','塩化ベンザルコニウム']);
 set(227,'タンパク質や脂質などの汚れを分解しやすくする洗浄剤はどれか。','酵素洗浄剤',['中性洗剤','塩化ベンザルコニウム']);
 set(233,'水や洗剤を用いて、汚れや有機物を物理的に取り除く操作はどれか。','洗浄',['清掃','消毒']);
-set(235,'煮沸による器具消毒の条件はどれか。','沸騰後2分間以上煮沸する',['80℃を超える湯に10分間以上浸す','沸騰前から1分間以上加熱する']);
 set(237,'熱湯を利用して微生物を減らす方法はどれか。','熱湯消毒',['煮沸消毒','蒸気消毒']);
 set(240,'高圧下の飽和蒸気を用いる滅菌方法はどれか。','高圧蒸気滅菌',['乾熱滅菌','EOG滅菌']);
 set(241,'高圧蒸気滅菌を行う装置はどれか。','オートクレーブ',['乾熱滅菌器','紫外線殺菌灯']);
-set(242,'紫外線による器具消毒の条件はどれか。','1平方センチメートル当たり85マイクロワット以上で20分間以上照射する',['1平方センチメートル当たり85マイクロワット以上で10分間以上照射する','1平方センチメートル当たり50マイクロワット以上で20分間以上照射する']);
 set(247,'一般細菌などには有効だが、芽胞や結核菌には弱い消毒水準はどれか。','低水準消毒',['中水準消毒','高水準消毒']);
 set(248,'一部の細菌がつくる、消毒薬や熱への抵抗性が高い構造はどれか。','芽胞',['栄養型細菌','バイオフィルム']);
 set(249,'環境条件が悪化すると、耐久性の高い構造をつくる細菌はどれか。','芽胞形成菌',['一般細菌','栄養型細菌']);
@@ -320,7 +309,7 @@ for(const item of Object.values(q)){
 data.version='3.0.108';
 quizData.version='3.0.108';
 }
-const APP_VERSION='3.0.195',STORAGE_KEY='riyoshi_glossary_learning_v1',TODAY_BOOKMARK_KEY='riyoshi_glossary_today_bookmarks_v1',TEXT_SCALE_KEY='riyoshi_glossary_text_enlarged_v1',TODAY_META_KEY='__today10',ROUND_META_KEY='__roundProgress',CATEGORY_ROUND_KEY='__categoryRounds',REVIEW_DATE='2026-07-17';
+const APP_VERSION='3.0.196',STORAGE_KEY='riyoshi_glossary_learning_v1',TODAY_BOOKMARK_KEY='riyoshi_glossary_today_bookmarks_v1',TEXT_SCALE_KEY='riyoshi_glossary_text_enlarged_v1',TODAY_META_KEY='__today10',ROUND_META_KEY='__roundProgress',CATEGORY_ROUND_KEY='__categoryRounds',REVIEW_DATE='2026-07-17';
 {const s=document.createElement('style');s.textContent='.mixup-comparison{text-align:left}.mixup-comparison-term{margin:0 0 16px!important}.mixup-term-name{margin:0 0 5px;font-weight:400}.mixup-comparison ul{margin:0;padding:0;list-style:none}.mixup-comparison li{display:flex;align-items:flex-start;text-align:left}.mixup-comparison li>span:first-child{flex:0 0 1em}.mixup-comparison li>span:last-child{flex:1;min-width:0}.mixup-memory{margin:20px 0 0!important}.mixup-memory>div{margin-bottom:5px}.mixup-memory p{display:flex;align-items:flex-start;margin:0;text-align:left;font-size:var(--font-lv4)}.mixup-memory p>span:first-child{flex:0 0 1em}.mixup-memory p>span:last-child{flex:1;min-width:0;font-size:var(--font-lv4)}.mixup-memory>div{font-size:var(--font-lv4)}.mixup-field>.term-value{padding-left:0}#dictionaryContent section > div[data-multiline]{text-align:left}#dictionaryContent section > ul[data-multiline]{text-align:left}.dictionary-sheet .exam-list{margin:0;padding-left:0;list-style:none}.dictionary-sheet .exam-list .exam-bullet{display:flex;align-items:flex-start;text-align:left}.dictionary-sheet .exam-list .exam-bullet>span[aria-hidden="true"]{flex:0 0 1em}.exam-bullet>.exam-line-text,.exam-bullet-line>.exam-line-text{flex:1 1 auto;min-width:0}.dictionary-sheet .exam-list .exam-plain{text-align:left}#dictionaryContent section>div{text-align:left}';document.head.append(s)}
 const flashcardTerms=data.terms;
 if(!(data.comparisonTerms||[]).some(term=>term.name==='非病原微生物')){
