@@ -1,6 +1,6 @@
 const CACHE_PREFIX='riyoshi-glossary-';
-const CACHE=CACHE_PREFIX+'v3.0.198-20260806';
-const ASSETS=['./','./index.html','./infection-classification-guide.html','./infectionDiseaseData.js?v=3.0.198','./taisaku-youten.html','./dictionaryPage.js?v=3.0.198','./style.css?v=3.0.198','./manifest.webmanifest','./glossaryData.js?v=3.0.198','./glossaryQuizData.js?v=3.0.198','./cultureManagementData.js?v=3.0.198','./comprehensiveSupplementData.js?v=3.0.198','./glossaryApp.js?v=3.0.198','./apple-touch-icon.png','./icon-192.png','./icon-512.png','./favicon-32.png'];
+const CACHE=CACHE_PREFIX+'v3.0.199-20260807';
+const ASSETS=['./','./index.html','./infection-classification-guide.html','./infectionDiseaseData.js?v=3.0.199','./taisaku-youten.html','./dictionaryPage.js?v=3.0.199','./style.css?v=3.0.199','./manifest.webmanifest','./glossaryData.js?v=3.0.199','./glossaryQuizData.js?v=3.0.199','./cultureManagementData.js?v=3.0.199','./comprehensiveSupplementData.js?v=3.0.199','./glossaryApp.js?v=3.0.199','./apple-touch-icon.png','./icon-192.png','./icon-512.png','./favicon-32.png'];
 self.addEventListener('install',event=>{
   event.waitUntil((async()=>{
     const cache=await caches.open(CACHE);

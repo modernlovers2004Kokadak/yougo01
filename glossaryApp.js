@@ -309,7 +309,7 @@ for(const item of Object.values(q)){
 data.version='3.0.108';
 quizData.version='3.0.108';
 }
-const APP_VERSION='3.0.198',STORAGE_KEY='riyoshi_glossary_learning_v1',TODAY_BOOKMARK_KEY='riyoshi_glossary_today_bookmarks_v1',TEXT_SCALE_KEY='riyoshi_glossary_text_enlarged_v1',TODAY_META_KEY='__today10',ROUND_META_KEY='__roundProgress',CATEGORY_ROUND_KEY='__categoryRounds',REVIEW_DATE='2026-07-17';
+const APP_VERSION='3.0.199',STORAGE_KEY='riyoshi_glossary_learning_v1',TODAY_BOOKMARK_KEY='riyoshi_glossary_today_bookmarks_v1',TEXT_SCALE_KEY='riyoshi_glossary_text_enlarged_v1',TODAY_META_KEY='__today10',ROUND_META_KEY='__roundProgress',CATEGORY_ROUND_KEY='__categoryRounds',REVIEW_DATE='2026-07-17';
 {const s=document.createElement('style');s.textContent='.mixup-comparison{text-align:left}.mixup-comparison-term{margin:0 0 16px!important}.mixup-term-name{margin:0 0 5px;font-weight:400}.mixup-comparison ul{margin:0;padding:0;list-style:none}.mixup-comparison li{display:flex;align-items:flex-start;text-align:left}.mixup-comparison li>span:first-child{flex:0 0 1em}.mixup-comparison li>span:last-child{flex:1;min-width:0}.mixup-memory{margin:20px 0 0!important}.mixup-memory>div{margin-bottom:5px}.mixup-memory p{display:flex;align-items:flex-start;margin:0;text-align:left;font-size:var(--font-lv4)}.mixup-memory p>span:first-child{flex:0 0 1em}.mixup-memory p>span:last-child{flex:1;min-width:0;font-size:var(--font-lv4)}.mixup-memory>div{font-size:var(--font-lv4)}.mixup-field>.term-value{padding-left:0}#dictionaryContent section > div[data-multiline]{text-align:left}#dictionaryContent section > ul[data-multiline]{text-align:left}.dictionary-sheet .exam-list{margin:0;padding-left:0;list-style:none}.dictionary-sheet .exam-list .exam-bullet{display:flex;align-items:flex-start;text-align:left}.dictionary-sheet .exam-list .exam-bullet>span[aria-hidden="true"]{flex:0 0 1em}.exam-bullet>.exam-line-text,.exam-bullet-line>.exam-line-text{flex:1 1 auto;min-width:0}.dictionary-sheet .exam-list .exam-plain{text-align:left}#dictionaryContent section>div{text-align:left}';document.head.append(s)}
 const flashcardTerms=data.terms;
 if(!(data.comparisonTerms||[]).some(term=>term.name==='非病原微生物')){
@@ -346,7 +346,8 @@ const pointDefinitionOverrides=new Map([
  [normalizeChoiceDictionaryText('湿度管理'),'室内の湿度を作業や衛生に適した範囲へ保つこと'],
  [normalizeChoiceDictionaryText('一括廃棄'),'廃棄物を種類や危険性で分けずにまとめて廃棄すること'],
  [normalizeChoiceDictionaryText('再使用'),'一度使用した物を、必要な処理を行って再び使用すること'],
- [normalizeChoiceDictionaryText('飛沫暴露'),'血液や体液などの飛沫が皮膚や粘膜へ接触すること'],
+ [normalizeChoiceDictionaryText('飛沫暴露'),'血液や体液などが、細かい飛沫となって皮膚や粘膜へ接触すること'],
+ [normalizeChoiceDictionaryText('飛沫'),'咳やくしゃみ、会話などで飛び出す、比較的大きな水分を含む粒子。重いためすぐに落下する'],
  [normalizeChoiceDictionaryText('糸状菌'),'菌糸を形成して増殖する真菌'],
  [normalizeChoiceDictionaryText('感染経路別分類'),'病原体が伝わる経路に基づいて分類する方法'],
  [normalizeChoiceDictionaryText('病原体別分類'),'細菌・ウイルス・真菌など病原体の種類に基づいて分類する方法'],
